@@ -23,7 +23,7 @@ public class ExtentManager extends BaseClass {
 		
         if (extent == null) {
             ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
-            htmlReporter.loadXMLConfig(System.getProperty("user.dir")+"/extent-config.xml");
+           
             htmlReporter.config().setTheme(Theme.DARK);
             htmlReporter.config().setDocumentTitle(fileName);
             htmlReporter.config().setEncoding("utf-8");
