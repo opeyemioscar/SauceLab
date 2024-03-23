@@ -19,7 +19,7 @@ public class ExtentManager extends BaseClass {
 	public ExtentSparkReporter htmlReporter;
 	 public static ExtentReports extent;
 	 public static ExtentTest test;
-	public static ExtentReports getInstance(String fileName) throws IOException {
+	public static ExtentReports getInstance(String fileName) {
 		
         if (extent == null) {
             ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);           
@@ -30,7 +30,7 @@ public class ExtentManager extends BaseClass {
 
             extent = new ExtentReports();
             extent.attachReporter(htmlReporter);
-            extent.setSystemInfo("Automation Tester", "Rahul Arora");
+            extent.setSystemInfo("Automation Tester", "Opeyemi Oscar");
             extent.setSystemInfo("Organization", "Way2Automation");
             extent.setSystemInfo("Build no", "W2A-1234");
         }
