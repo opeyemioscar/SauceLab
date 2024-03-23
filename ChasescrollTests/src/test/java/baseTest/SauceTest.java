@@ -24,7 +24,7 @@ public class SauceTest extends BaseClass {
 	
 	@Test(priority = 1)
 	public void thirdTest() {
-		WebElement displayed = driver.findElement(By.xpath("//img[@class='bot_column1']"));
+		WebElement displayed = driver.findElement(By.xpath("//img[@class='bot_column']"));
 		displayed.isDisplayed();
 		
 	}
