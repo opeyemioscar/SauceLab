@@ -22,8 +22,7 @@ public class ExtentManager extends BaseClass {
 	public static ExtentReports getInstance(String fileName) throws IOException {
 		
         if (extent == null) {
-            ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
-           
+            ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);           
             htmlReporter.config().setTheme(Theme.DARK);
             htmlReporter.config().setDocumentTitle(fileName);
             htmlReporter.config().setEncoding("utf-8");
